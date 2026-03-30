@@ -24,7 +24,9 @@
       // 4. Select the caption and change its textContent to "This is the new image"
 const image = document.querySelector("#photo");
 image.src = "https://picsum.photos/seed/new/300/200";
+
 image.alt = "New image";
+console.log(image.alt)
 const caption = document.querySelector("#caption");
 caption.textContent = "This is the new image"
     </script>

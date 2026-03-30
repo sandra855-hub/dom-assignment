@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10 space-y-4">
+
+    <div class="card bg-white rounded-xl shadow p-5 text-gray-700">Card One</div>
+    <div class="card bg-white rounded-xl shadow p-5 text-gray-700">Card Two</div>
+    <div class="card bg-white rounded-xl shadow p-5 text-gray-700">Card Three</div>
+
+    <script>
+      // YOUR CODE HERE
+      // 1. Select all elements with the class "card" using querySelectorAll
+      // 2. Loop through them with forEach
+      // 3. Add "ring-2" and "ring-blue-400" to each one's classList
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card) =>
+    card.classList.add("ring-2","ring-blue-400"))
+    </script>
+
+  </body>
+</html>
