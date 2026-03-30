@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10">
+
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Team Members</h2>
+
+    <ul id="teamList" class="space-y-2">
+      <li id="member1" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700 text-sm">Alice</li>
+      <li id="member2" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700 text-sm">Bob</li>
+      <li id="member3" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700 text-sm">Charlie</li>
+      <li id="member4" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700 text-sm">Diana</li>
+      <li id="member5" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700 text-sm">Emeka</li>
+    </ul>
+
+    <script>
+      // YOUR CODE HERE
+      // 1. Select member2 by id and call .remove() on it
+      // 2. Select member4 by id and call .remove() on it
+      const member2 = document.querySelector("#member2");
+      const member4 = document.querySelector("#member4");
+      member2.remove();
+      member4.remove();
+    </script>
+
+  </body>
+</html>
