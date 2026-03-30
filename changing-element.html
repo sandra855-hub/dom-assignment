@@ -35,6 +35,12 @@
       //                   → change alt attribute to "After"
       // 4. Select #link   → change href to "https://developer.mozilla.org"
       //                   → change textContent to "Visit MDN Docs"
+      const title = document.querySelector("#title");
+      title.textContent = "DOM Manipulation is Powerful";
+const description = document.querySelector("#description");
+description.textContent = "This content was set by JavaScript on page load.";
+description.classList.remove("text-gray-400");
+description.classList.add("text-gray-600");
     </script>
 
   </body>
