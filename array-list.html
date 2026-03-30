@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10">
+
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Fruit List</h2>
+
+    <ul id="fruitList" class="space-y-2"></ul>
+
+    <script>
+      const fruits = ["Mango", "Banana", "Pineapple", "Watermelon", "Orange"];
+
+      // YOUR CODE HERE
+      // 1. Select the <ul> by id
+      // 2. Loop through the fruits array with forEach
+      // 3. For each fruit:
+      //    a. Create a new <li> element
+      //    b. Set its textContent to the fruit name
+      //    c. Add classes: "bg-gray-100" "rounded-lg" "px-4" "py-2" "text-gray-700" "text-sm"
+      //    d. Append it to the <ul>
+        const fruitList = document.querySelector("#fruitList");
+        fruits.forEach((fruit) => {
+            const li = document.createElement("li");
+            li.textContent = fruit; 
+            li.classList.add("bg-gray-100", "rounded-lg", "px-4", "py-2", "text-gray-700", "text-sm");
+            fruitList.appendChild(li);
+        }); 
+
+    </script>
+
+  </body>
+</html>
